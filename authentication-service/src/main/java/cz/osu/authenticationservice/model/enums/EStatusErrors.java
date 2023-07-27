@@ -1,0 +1,18 @@
+package cz.osu.authenticationservice.model.enums;
+
+public enum EStatusErrors {
+    NAME_TAKEN("NAME_TAKEN"),EMAIL_TAKEN("EMAIL_TAKEN"),INCORRECT_PASSWORD("INCORRECT_PASSWORD"),
+    NAME_EMPTY_CHARS("NAME_EMPTY_CHARS"), NAME_INSUFFICIENT_LENGTH("NAME_INSUFFICIENT_LENGTH"), NAME_INVALID_CHARS("NAME_INVALID_CHARS"), 
+    EMAIL_INVALID_CHARS("EMAIL_INVALID_CHARS"),
+    PASSWORD_EMPTY_CHARS("PASSWORD_EMPTY_CHARS"), PASSWORD_INSUFFICIENT_LENGTH("PASSWORD_INSUFFICIENT_LENGTH"), PASSWORD_INVALID_CHARS("PASSWORD_INVALID_CHARS");
+
+    private final String value;
+
+    EStatusErrors(String value) {
+        this.value = value;
+    }
+
+    public String getValue(){
+        return this.value;
+    }
+}
